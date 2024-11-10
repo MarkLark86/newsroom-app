@@ -10,7 +10,7 @@ aiofiles==24.1.0
     #   quart-uploads
 aiohappyeyeballs==2.4.3
     # via aiohttp
-aiohttp==3.10.8
+aiohttp==3.10.10
     # via elasticsearch
 aiosignal==1.3.1
     # via aiohttp
@@ -24,8 +24,6 @@ arrow==1.3.0
     # via
     #   eve-elastic
     #   superdesk-core
-asgi-tools==1.0.10
-    # via quart-babel
 asgiref==3.8.1
     # via superdesk-core
 asn1crypto==1.5.1
@@ -36,7 +34,6 @@ asn1crypto==1.5.1
 async-timeout==4.0.3
     # via
     #   aiohttp
-    #   asgi-tools
     #   redis
 attrs==24.2.0
     # via aiohttp
@@ -57,9 +54,9 @@ blinker==1.8.2
     #   raven
     #   sentry-sdk
     #   superdesk-core
-boto3==1.35.31
+boto3==1.35.57
     # via superdesk-core
-botocore==1.35.31
+botocore==1.35.57
     # via
     #   boto3
     #   s3transfer
@@ -87,7 +84,7 @@ chardet==5.2.0
     # via
     #   reportlab
     #   superdesk-core
-charset-normalizer==3.3.2
+charset-normalizer==3.4.0
     # via requests
 ciso8601==2.3.1
     # via eve-elastic
@@ -106,9 +103,9 @@ click-plugins==1.1.1
     # via celery
 click-repl==0.3.0
     # via celery
-croniter==3.0.3
+croniter==3.0.4
     # via superdesk-core
-cryptography==43.0.1
+cryptography==43.0.3
     # via
     #   authlib
     #   jwcrypto
@@ -118,7 +115,7 @@ cssselect2==0.7.0
     # via svglib
 deepdiff==8.0.1
     # via superdesk-planning
-dnspython==2.6.1
+dnspython==2.7.0
     # via
     #   email-validator
     #   pymongo
@@ -162,7 +159,7 @@ flask-oidc-ex==0.6.2
     # via superdesk-core
 flask-webpack==0.1.0
     # via newsroom-core
-frozenlist==1.4.1
+frozenlist==1.5.0
     # via
     #   aiohttp
     #   aiosignal
@@ -180,14 +177,12 @@ hachoir==3.3.0
     # via superdesk-core
 hermescache==1.0.0
     # via superdesk-core
-honcho==1.1.0
+honcho==2.0.0
     # via newsroom-core
 hpack==4.0.0
     # via h2
 html5lib==1.1
     # via xhtml2pdf
-http-router==4.1.2
-    # via asgi-tools
 httplib2==0.22.0
     # via oauth2client
 hypercorn==0.17.3
@@ -203,9 +198,7 @@ idna==3.10
     #   email-validator
     #   requests
     #   yarl
-importlib-metadata==8.5.0
-    # via quart-babel
-isodate==0.6.1
+isodate==0.7.2
     # via python3-saml
 itsdangerous==2.2.0
     # via
@@ -240,7 +233,7 @@ lxml==5.2.2
     #   xmlsec
 lxml-html-clean==0.2.2
     # via superdesk-core
-markupsafe==2.1.5
+markupsafe==3.0.2
     # via
     #   jinja2
     #   quart
@@ -252,7 +245,6 @@ motor==3.5.3
 multidict==6.1.0
     # via
     #   aiohttp
-    #   asgi-tools
     #   yarl
 newsroom-core @ git+https://github.com/superdesk/newsroom-core.git@async
     # via -r requirements.in
@@ -273,6 +265,8 @@ priority==2.0.0
     # via hypercorn
 prompt-toolkit==3.0.48
     # via click-repl
+propcache==0.2.0
+    # via yarl
 pyasn1==0.6.1
     # via
     #   ldap3
@@ -304,11 +298,11 @@ pymongo==4.7.3
     #   eve
     #   motor
     #   superdesk-core
-pyparsing==3.1.4
+pyparsing==3.2.0
     # via
     #   httplib2
     #   pyrtf3
-pypdf==5.0.1
+pypdf==5.1.0
     # via xhtml2pdf
 pyrtf3==0.47.5
     # via newsroom-core
@@ -355,15 +349,15 @@ quart @ git+https://github.com/MarkLark86/quart@fix-test-client-with-utf8-url
     #   quart-wtforms
     #   sentry-sdk
     #   superdesk-core
-quart-babel @ git+https://github.com/MarkLark86/quart-babel@fix-get-format
+quart-babel==1.0.7
     # via superdesk-core
 quart-flask-patch==0.3.0
     # via superdesk-core
 quart-rate-limiter==0.10.0
     # via newsroom-core
-quart-uploads==0.0.3
+quart-uploads==0.0.4
     # via quart-wtforms
-quart-wtforms==1.0.2
+quart-wtforms==1.0.3
     # via newsroom-core
 raven[flask]==6.10.0
     # via superdesk-core
@@ -391,9 +385,9 @@ rsa==4.9
     # via
     #   google-auth
     #   oauth2client
-s3transfer==0.10.2
+s3transfer==0.10.3
     # via boto3
-sentry-sdk[quart]==2.14.0
+sentry-sdk[quart]==1.45.1
     # via newsroom-core
 sgmllib3k==1.0.0
     # via feedparser
@@ -403,12 +397,9 @@ six==1.16.0
     # via
     #   flask-oidc-ex
     #   html5lib
-    #   isodate
     #   oauth2client
     #   python-bidi
     #   python-dateutil
-sniffio==1.3.1
-    # via asgi-tools
 superdesk-core @ git+https://github.com/superdesk/superdesk-core.git@async
     # via newsroom-core
 superdesk-planning @ git+https://github.com/superdesk/superdesk-planning.git@async
@@ -417,16 +408,18 @@ svglib==1.5.1
     # via xhtml2pdf
 taskgroup==0.0.0a4
     # via hypercorn
-tinycss2==1.3.0
+tinycss2==1.4.0
     # via
     #   cssselect2
     #   svglib
-tomli==2.0.1
+tomli==2.0.2
     # via hypercorn
 types-aiofiles==24.1.0.20240626
     # via quart-uploads
-types-python-dateutil==2.9.0.20240906
+types-python-dateutil==2.9.0.20241003
     # via arrow
+types-pytz==2024.2.0.20241003
+    # via quart-babel
 typing-extensions==4.12.2
     # via
     #   asgiref
@@ -471,7 +464,7 @@ webencodings==0.5.1
     #   tinycss2
 websockets==13.0.1
     # via superdesk-core
-werkzeug==3.0.4
+werkzeug==3.1.3
     # via
     #   flask
     #   quart
@@ -483,18 +476,15 @@ wtforms[email]==3.1.2
     # via
     #   newsroom-core
     #   quart-wtforms
+    #   wtforms
 xhtml2pdf==0.2.16
     # via newsroom-core
 xmlsec==1.3.14
     # via
     #   python3-saml
     #   superdesk-core
-yarl==1.13.1
-    # via
-    #   aiohttp
-    #   asgi-tools
-zipp==3.20.2
-    # via importlib-metadata
+yarl==1.17.1
+    # via aiohttp
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
