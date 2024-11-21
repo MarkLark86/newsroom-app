@@ -18,3 +18,6 @@ WIRE_AGGS = {
 
 SHOW_USER_REGISTER = True
 SIGNUP_EMAIL_RECIPIENTS = "admin@example.com"
+
+# NOTE: temporary just so QA can do their work
+NEWS_API_ENABLED = True
