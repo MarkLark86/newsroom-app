@@ -4,7 +4,7 @@
     "build": "webpack --mode production --progress"
   },
   "dependencies": {
-    "newsroom-core": "github:MarkLark86/newsroom-core#async"
+    "newsroom-core": "github:superdesk/newsroom-core#async"
   },
   "volta": {
     "node": "14.21.3"
